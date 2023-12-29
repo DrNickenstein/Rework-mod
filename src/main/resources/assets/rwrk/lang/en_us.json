@@ -1,3 +1,16 @@
 {
-  "item.rwrk.void_ore": "Void Ore"
+  //Items
+
+  "item.rwrk.void_ore": "Void Ore",
+
+  //Armour
+
+  "item.rwrk.amethyst_helmet": "Amethyst Helmet",
+  "item.rwrk.amethyst_chestplate": "Amethyst Chestplate",
+  "item.rwrk.amethyst_leggings": "Amethyst Leggings",
+  "item.rwrk.amethyst_boots": "Amethyst Boots",
+
+  //Keybindings
+
+  "key.rwrk.armour_effect_activation": "Armour effect activation"
 }

@@ -1,3 +1,16 @@
 {
-  "item.rwrk.void_ore": "Minerale di Vuoto"
+  //Oggetti
+
+  "item.rwrk.void_ore": "Minerale di Vuoto",
+
+  //Armatura
+
+  "item.rwrk.amethyst_helmet": "Elmetto d'ametista",
+  "item.rwrk.amethyst_chestplate": "Corsaletto d'ametista",
+  "item.rwrk.amethyst_leggings": "Gambali d'ametista",
+  "item.rwrk.amethyst_boots": "Stivali d'ametista",
+
+  //Tasti
+
+  "key.rwrk.armour_effect_activation": "Attivazione effetto armatura"
 }

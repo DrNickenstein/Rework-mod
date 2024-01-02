@@ -10,9 +10,6 @@ public final class RwrkKeybindings {
     public static final RwrkKeybindings INSTANCE = new RwrkKeybindings();
 
     private RwrkKeybindings() {
-
-
-
     }
 
     public final KeyMapping activateArmourEffect = new KeyMapping("key." + ReworkMod.MODID + ".armour_effect_activation",

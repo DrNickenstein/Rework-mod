@@ -2,7 +2,7 @@
   //Items
 
   "item.rwrk.void_crystal": "Void Crystal",
-  "item.rwrk.wardens_larynx": "Warden's Larynx",
+  "item.rwrk.warden_larynx": "Warden's Larynx",
   "item.rwrk.sonic_boom_device": "Sonic Boom Device",
 
   //Armour
@@ -16,9 +16,12 @@
 
   "key.rwrk.armour_effect_activation": "Armour effect activation",
 
-  //Tooltip
+  //Tooltips
   "tooltip.amethyst_armour.use": "\nEvery 180s, press the armour ability activation key to become invincible for 10s.\n",
   "tooltip.amethyst_armour.cooldown": "Cooling down... ",
-  "tooltip.amethyst_armour.ready_for_use": "Ability ready for use"
+  "tooltip.amethyst_armour.ready_for_use": "Ability ready for use",
+
+  //Effects
+  "effect.rwrk.invulnerability": "Invulnerability"
 
 }

@@ -40,6 +40,9 @@ public class AmethystChestplate extends ArmorItem {
 
         super.inventoryTick(stack, level, entity, slotId, isSelected);
 
+        /*First, we check whether we are on the server side,
+        as inventoryTick is called both on the server side
+        and the client side.*/
         if (!level.isClientSide()) {
 
             Player player;
@@ -47,18 +50,18 @@ public class AmethystChestplate extends ArmorItem {
             /*The following code is only executed if the LivingEntity
             wearing the armour is an instance of Player, since only
             players can activate abilities through the keyboard.*/
-
             if(entity instanceof Player) {
                 player = (Player) entity;
             } else {
                 return;
             }
 
-            //We are creating the 'ability' tag, under which
-            //we will put several different values
-
+            /*We are creating the 'ability' tag,
+            under which we will put several values*/
             CompoundTag tag = stack.getOrCreateTagElement("ability");
 
+            /*We are constantly checking whether
+            the set is full or not.*/
             tag.putBoolean("isSetFull", player.getItemBySlot(EquipmentSlot.HEAD).getItem() == RwrkItems.AMETHYST_HELMET.get() &&
                     player.getItemBySlot(EquipmentSlot.CHEST).getItem() == RwrkItems.AMETHYST_CHESTPLATE.get() &&
                     player.getItemBySlot(EquipmentSlot.LEGS).getItem() == RwrkItems.AMETHYST_LEGGINGS.get() &&
@@ -66,14 +69,18 @@ public class AmethystChestplate extends ArmorItem {
 
             currentTime = level.getGameTime();
 
+            //After 10 seconds, we are removing the invulnerability.
             if(tag.getLong("cooldownTime") == 169) {
 
                 player.removeEffect(RwrkMobEffects.INVULNERABILITY.get());
                 player.setInvulnerable(false);
-                System.out.println("Invulnerability removed");
 
             }
 
+            /*During the first 10 seconds, we are applying
+            the MobEffect only once, but we are applying
+            the invulnerability every tick to avoid any
+            conflicts with vanilla code.*/
             if(tag.getLong("cooldownTime") >= 170) {
 
                 if(currentTime - tag.getLong("lastUsage") >= 3600) {
@@ -85,21 +92,18 @@ public class AmethystChestplate extends ArmorItem {
                 }
 
                 player.setInvulnerable(true);
-                System.out.println("Invulnerability set");
 
             }
-                tag.putLong("cooldownTime", 180 - (currentTime - tag.getLong("lastUsage")) / 20);
+
+            //We are updating the cooldownTime every tick
+            tag.putLong("cooldownTime", 180 - (currentTime - tag.getLong("lastUsage")) / 20);
         }
     }
 
     public void activateEffects(ItemStack stack) {
 
-        System.out.println("Cooldown time before activation: " + stack.getOrCreateTagElement("ability").getLong("cooldownTime"));
-
         if(stack.getOrCreateTagElement("ability").getLong("cooldownTime") <= 0) {
             stack.getOrCreateTagElement("ability").putLong("cooldownTime", 180);
-            System.out.println("effects activated");
-            System.out.println("Cooldown time after activation: " + stack.getOrCreateTagElement("ability").getLong("cooldownTime"));
         }
 
     }

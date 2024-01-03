@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "rwrk:item/wardens_larynx"
+    "layer0": "rwrk:item/warden_larynx"
   }
 }

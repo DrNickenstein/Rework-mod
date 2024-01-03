@@ -25,39 +25,10 @@ public class ClientForgeHandler {
 
         if(RwrkKeybindings.INSTANCE.activateArmourEffect.consumeClick() && minecraft.player != null) {
 
-            System.out.println("key pressed");
+            //We are sending a packet since we are currently on the client side.
             RwrkPacketHandler.sendToServer(new AmethystArmourC2SPacket());
 
         }
-
-        /*LocalPlayer player = minecraft.player;
-
-        if(minecraft.player != null) {
-
-            ItemStack wornItemStack = player.getItemBySlot(EquipmentSlot.CHEST);
-            Item wornItem = wornItemStack.getItem();
-            AmethystChestplate wornAmethystChestplate;
-
-            if (wornItem instanceof AmethystChestplate) {
-                wornAmethystChestplate = (AmethystChestplate) wornItem;
-            } else {
-                return;
-            }
-
-            if (RwrkKeybindings.INSTANCE.activateArmourEffect.consumeClick()) {
-
-                System.out.println("key pressed");
-
-                if(wornAmethystChestplate.isSetFull(wornItemStack)) {
-
-                    System.out.println("set is full");
-                    wornAmethystChestplate.activateEffects(wornItemStack);
-
-                }
-
-            }
-
-        }*/
 
     }
 

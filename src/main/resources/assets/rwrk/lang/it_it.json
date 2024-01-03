@@ -2,7 +2,7 @@
   //Oggetti
 
   "item.rwrk.void_crystal": "Cristallo di Vuoto",
-  "item.rwrk.wardens_larynx": "Laringe di Warden",
+  "item.rwrk.warden_larynx": "Laringe di Warden",
   "item.rwrk.sonic_boom_device": "Dispositivo di Raggio Sonico",
 
   //Armatura
@@ -19,5 +19,9 @@
   //Tooltip
   "tooltip.amethyst_armour.use": "\nOgni 180s, premi il tasto di attivazione dell'abilità dell'armatura per diventare invincibile per 10s.\n",
   "tooltip.amethyst_armour.cooldown": "Ricarica potere... ",
-  "tooltip.amethyst_armour.ready_for_use": "Abilità pronta all'uso"
+  "tooltip.amethyst_armour.ready_for_use": "Abilità pronta all'uso",
+
+  //Effects
+  "effect.rwrk.invulnerability": "Invulnerabilità"
+
 }

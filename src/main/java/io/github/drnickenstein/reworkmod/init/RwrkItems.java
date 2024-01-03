@@ -1,6 +1,7 @@
 package io.github.drnickenstein.reworkmod.init;
 
 import io.github.drnickenstein.reworkmod.ReworkMod;
+import io.github.drnickenstein.reworkmod.items.misc.SonicBoomDevice;
 import io.github.drnickenstein.reworkmod.items.wearables.armour.AmethystChestplate;
 import io.github.drnickenstein.reworkmod.util.RwrkArmorMaterials;
 import net.minecraft.world.item.*;
@@ -16,6 +17,8 @@ public class RwrkItems {
     //Oggetti vari
 
     public static final RegistryObject<Item> VOID_ORE = ITEMS.register("void_ore", () -> new Item(new Item.Properties()
+            .rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> SONIC_BOOM_DEVICE = ITEMS.register("sonic_boom_device", () -> new SonicBoomDevice(new Item.Properties()
             .rarity(Rarity.EPIC)));
 
 

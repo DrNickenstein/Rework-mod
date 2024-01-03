@@ -40,82 +40,68 @@ public class AmethystChestplate extends ArmorItem {
 
         super.inventoryTick(stack, level, entity, slotId, isSelected);
 
-        Player player;
+        if (!level.isClientSide()) {
 
-        /*The following code is only executed if the LivingEntity
-        wearing the armour is an instance of Player, since only
-        players can activate abilities through the keyboard.*/
+            Player player;
 
-        if(entity instanceof Player) {
-            player = (Player)entity;
-        } else {
-            return;
-        }
+            /*The following code is only executed if the LivingEntity
+            wearing the armour is an instance of Player, since only
+            players can activate abilities through the keyboard.*/
 
-        //We are creating the 'ability' tag, under which
-        //we will put several different values
-
-        CompoundTag tag = stack.getOrCreateTagElement("ability");
-
-        tag.putBoolean("isSetFull", player.getItemBySlot(EquipmentSlot.HEAD).getItem() == RwrkItems.AMETHYST_HELMET.get() &&
-                player.getItemBySlot(EquipmentSlot.CHEST).getItem() == RwrkItems.AMETHYST_CHESTPLATE.get() &&
-                player.getItemBySlot(EquipmentSlot.LEGS).getItem() == RwrkItems.AMETHYST_LEGGINGS.get() &&
-                player.getItemBySlot(EquipmentSlot.FEET).getItem() == RwrkItems.AMETHYST_BOOTS.get());
-
-        currentTime = level.getGameTime();
-
-        System.out.println("tick start, isEffectActive: " + tag.getBoolean("isEffectActive"));
-
-        if(tag.getLong("lastUsage") != 0 && shouldDeactivateEffects(stack)) {
-
-            player.removeEffect(RwrkMobEffects.INVULNERABILITY.get());
-            player.setInvulnerable(false);
-            System.out.println("Invulnerability removed");
-            tag.putBoolean("isEffectActive", false);
-
-        }
-
-        if(tag.getBoolean("isEffectActive")) {
-
-            if(currentTime - tag.getLong("lastUsage") >= 3800) {
-                stack.getOrCreateTagElement("ability").putLong("lastUsage", currentTime);
+            if(entity instanceof Player) {
+                player = (Player) entity;
+            } else {
+                return;
             }
 
-            if(tag.getLong("lastUsage") == currentTime) {
-                player.addEffect(new MobEffectInstance(RwrkMobEffects.INVULNERABILITY.get(), 200));
+            //We are creating the 'ability' tag, under which
+            //we will put several different values
+
+            CompoundTag tag = stack.getOrCreateTagElement("ability");
+
+            tag.putBoolean("isSetFull", player.getItemBySlot(EquipmentSlot.HEAD).getItem() == RwrkItems.AMETHYST_HELMET.get() &&
+                    player.getItemBySlot(EquipmentSlot.CHEST).getItem() == RwrkItems.AMETHYST_CHESTPLATE.get() &&
+                    player.getItemBySlot(EquipmentSlot.LEGS).getItem() == RwrkItems.AMETHYST_LEGGINGS.get() &&
+                    player.getItemBySlot(EquipmentSlot.FEET).getItem() == RwrkItems.AMETHYST_BOOTS.get());
+
+            currentTime = level.getGameTime();
+
+            if(tag.getLong("cooldownTime") == 169) {
+
+                player.removeEffect(RwrkMobEffects.INVULNERABILITY.get());
+                player.setInvulnerable(false);
+                System.out.println("Invulnerability removed");
+
             }
 
-            player.setInvulnerable(true);
-            System.out.println("Invulnerability set");
-            System.out.println("isEffect active if, isEffectActive: " + tag.getBoolean("isEffectActive"));
+            if(tag.getLong("cooldownTime") >= 170) {
 
+                if(currentTime - tag.getLong("lastUsage") >= 3600) {
+                    tag.putLong("lastUsage", currentTime);
+                }
+
+                if(tag.getLong("lastUsage") == currentTime) {
+                    player.addEffect(new MobEffectInstance(RwrkMobEffects.INVULNERABILITY.get(), 200));
+                }
+
+                player.setInvulnerable(true);
+                System.out.println("Invulnerability set");
+
+            }
+                tag.putLong("cooldownTime", 180 - (currentTime - tag.getLong("lastUsage")) / 20);
         }
-
-        tag.putLong("cooldownTime", 180 - (currentTime - tag.getLong("lastUsage")) / 20);
-
-        System.out.println("tick end, isEffectActive: " + tag.getBoolean("isEffectActive"));
-
     }
 
     public void activateEffects(ItemStack stack) {
 
-        long lastUsage = stack.getOrCreateTagElement("ability").getLong("lastUsage");
+        System.out.println("Cooldown time before activation: " + stack.getOrCreateTagElement("ability").getLong("cooldownTime"));
 
-        if(currentTime - lastUsage >= 3800) {
-            System.out.println("Effect applied.");
-            stack.getOrCreateTagElement("ability").putBoolean("isEffectActive", true);
+        if(stack.getOrCreateTagElement("ability").getLong("cooldownTime") <= 0) {
+            stack.getOrCreateTagElement("ability").putLong("cooldownTime", 180);
+            System.out.println("effects activated");
+            System.out.println("Cooldown time after activation: " + stack.getOrCreateTagElement("ability").getLong("cooldownTime"));
         }
 
-        System.out.println("activateEffects call ending. " + stack.getOrCreateTagElement("ability").getBoolean("isEffectActive"));
-    }
-    public boolean shouldDeactivateEffects(ItemStack stack) {
-
-        long lastUsage = stack.getOrCreateTagElement("ability").getLong("lastUsage");
-
-        if(currentTime - lastUsage >= 200) {
-            return true;
-        }
-        return false;
     }
 
     public boolean isSetFull(ItemStack stack) {

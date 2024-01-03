@@ -3,6 +3,8 @@ package io.github.drnickenstein.reworkmod.handler;
 import io.github.drnickenstein.reworkmod.ReworkMod;
 import io.github.drnickenstein.reworkmod.init.RwrkKeybindings;
 import io.github.drnickenstein.reworkmod.items.wearables.armour.AmethystChestplate;
+import io.github.drnickenstein.reworkmod.network.AmethystArmourC2SPacket;
+import io.github.drnickenstein.reworkmod.network.RwrkPacketHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -20,7 +22,15 @@ public class ClientForgeHandler {
     public static void clientTick(TickEvent.ClientTickEvent event) {
 
         Minecraft minecraft = Minecraft.getInstance();
-        LocalPlayer player = minecraft.player;
+
+        if(RwrkKeybindings.INSTANCE.activateArmourEffect.consumeClick() && minecraft.player != null) {
+
+            System.out.println("key pressed");
+            RwrkPacketHandler.sendToServer(new AmethystArmourC2SPacket());
+
+        }
+
+        /*LocalPlayer player = minecraft.player;
 
         if(minecraft.player != null) {
 
@@ -47,7 +57,7 @@ public class ClientForgeHandler {
 
             }
 
-        }
+        }*/
 
     }
 

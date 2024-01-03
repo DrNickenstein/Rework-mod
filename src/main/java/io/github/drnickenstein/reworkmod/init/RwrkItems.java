@@ -23,6 +23,9 @@ public class RwrkItems {
             .stacksTo(1)
             .rarity(Rarity.EPIC)));
 
+    public static final RegistryObject<Item> AMETHYST_TALISMAN = ITEMS.register("amethyst_talisman", () -> new Item(new Item.Properties()
+            .stacksTo(1)));
+
 
     //Armour
 

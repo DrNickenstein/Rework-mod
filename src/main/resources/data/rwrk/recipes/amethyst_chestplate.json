@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "rwrk:void_crystal"
+    },
+    "X": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "pattern": [
+    "# #",
+    "X#X",
+    "XXX"
+  ],
+  "result": {
+    "item": "rwrk:amethyst_chestplate"
+  }
+}

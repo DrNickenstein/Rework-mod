@@ -14,7 +14,7 @@ import java.util.function.Supplier;
 public enum RwrkArmorMaterials implements ArmorMaterial {
 
     AMETHYST("amethyst", new int[]{500, 1200, 600, 400}, new int[]{3, 6, 8, 3}, 15, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0f, -1f,
-            () -> Ingredient.of(RwrkItems.VOID_ORE.get()));
+            () -> Ingredient.of(RwrkItems.VOID_CRYSTAL.get()));
 
     private final int[] healthPerSlot;
     private final String name;

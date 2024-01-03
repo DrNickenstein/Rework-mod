@@ -16,9 +16,13 @@ public class RwrkItems {
 
     //Oggetti vari
 
-    public static final RegistryObject<Item> VOID_ORE = ITEMS.register("void_ore", () -> new Item(new Item.Properties()
+    public static final RegistryObject<Item> VOID_CRYSTAL = ITEMS.register("void_crystal", () -> new Item(new Item.Properties()
+            .rarity(Rarity.EPIC)));
+
+    public static final RegistryObject<Item> WARDENS_LARYNX = ITEMS.register("wardens_larynx",() -> new Item(new Item.Properties()
             .rarity(Rarity.EPIC)));
     public static final RegistryObject<Item> SONIC_BOOM_DEVICE = ITEMS.register("sonic_boom_device", () -> new SonicBoomDevice(new Item.Properties()
+            .stacksTo(1)
             .rarity(Rarity.EPIC)));
 
 

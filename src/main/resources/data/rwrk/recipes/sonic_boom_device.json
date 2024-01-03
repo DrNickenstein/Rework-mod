@@ -1,18 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    " V",
-    "VLV",
-    " V"
-  ],
+  "category": "equipment",
   "key": {
-    "V": {
-      "item": "rwrk:void_crystal"
-    },
-    "L": {
+    "#": {
       "item": "rwrk:wardens_larynx"
+    },
+    "X": {
+      "item": "rwrk:void_crystal"
     }
   },
+  "pattern": [
+    " X ",
+    "X#X",
+    " X "
+  ],
   "result": {
     "item": "rwrk:sonic_boom_device"
   }

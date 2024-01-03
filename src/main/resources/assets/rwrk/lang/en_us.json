@@ -1,7 +1,9 @@
 {
   //Items
 
-  "item.rwrk.void_ore": "Void Ore",
+  "item.rwrk.void_crystal": "Void Crystal",
+  "item.rwrk.wardens_larynx": "Warden's Larynx",
+  "item.rwrk.sonic_boom_device": "Sonic Boom Device",
 
   //Armour
 

@@ -6,6 +6,7 @@ import io.github.drnickenstein.reworkmod.items.misc.SonicBoomDevice;
 import io.github.drnickenstein.reworkmod.items.wearables.armour.AmethystChestplate;
 import io.github.drnickenstein.reworkmod.util.RwrkArmorMaterials;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -35,7 +36,12 @@ public class RwrkItems {
     public static final RegistryObject<Item> AMETHYST_LEGGINGS = ITEMS.register("amethyst_leggings",() -> new ArmorItem(RwrkArmorMaterials.AMETHYST, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> AMETHYST_BOOTS = ITEMS.register("amethyst_boots",() -> new ArmorItem(RwrkArmorMaterials.AMETHYST, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    //Tools
 
+    //Blocks
+
+    public static final RegistryObject<BlockItem> DEEPSLATE_VOID_CRYSTAL_ORE_ITEM = ITEMS.register("deepslate_void_crystal_ore",  () -> new BlockItem(RwrkBlocks.DEEPSLATE_VOID_CRYSTAL_ORE.get(), new Item.Properties()));
+
+
+    //Tools
 
 }

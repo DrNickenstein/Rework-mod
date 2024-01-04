@@ -6,6 +6,10 @@
   "item.rwrk.sonic_boom_device": "Dispositivo di Raggio Sonico",
   "item.rwrk.amethyst_talisman": "Talismano d'Ametista",
 
+  //Blocks
+
+  "block.rwrk.deepslate_void_crystal_ore": "Minerale di Cristallo di Void in Ardesia Profonda",
+
   //Tabs
 
   "itemGroup.rework_tab": "Rework Tab",

@@ -6,6 +6,10 @@
   "item.rwrk.sonic_boom_device": "Sonic Boom Device",
   "item.rwrk.amethyst_talisman": "Amethyst Talisman",
 
+  //Blocks
+
+  "block.rwrk.deepslate_void_crystal_ore": "Deepslate Void Crystal Ore"
+
   //Tabs
 
   "itemGroup.rework_tab": "Rework Tab",

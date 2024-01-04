@@ -17,12 +17,8 @@ public class RwrkGlobalLootModifiersProvider extends GlobalLootModifierProvider 
     @Override
     protected void start() {
 
-        System.out.println("PROVIDER STARTED PROVIDER STARTED PROVIDER STARTED PROVIDER STARTED PROVIDER STARTED ");
-
         add("warden_larynx_from_warden", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("entities/warden")).build() }, RwrkItems.WARDEN_LARYNX.get()));
-
-        System.out.println("ADDED ADDED ADDED ADDED ADDED ");
 
     }
 }

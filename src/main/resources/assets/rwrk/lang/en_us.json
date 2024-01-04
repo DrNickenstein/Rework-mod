@@ -5,10 +5,12 @@
   "item.rwrk.warden_larynx": "Warden's Larynx",
   "item.rwrk.sonic_boom_device": "Sonic Boom Device",
   "item.rwrk.amethyst_talisman": "Amethyst Talisman",
+  "item.rwrk.frog_tongue": "Frog Tongue",
+  "item.rwrk.bat_wing": "Bat Wing",
 
   //Blocks
 
-  "block.rwrk.deepslate_void_crystal_ore": "Deepslate Void Crystal Ore"
+  "block.rwrk.deepslate_void_crystal_ore": "Deepslate Void Crystal Ore",
 
   //Tabs
 

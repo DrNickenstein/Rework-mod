@@ -1,6 +1,8 @@
 {
   "entries": [
-    "rwrk:warden_larynx_from_warden"
+    "rwrk:warden_larynx_from_warden",
+    "rwrk:frog_tongue_from_frog",
+    "rwrk:bat_wing_from_bat"
   ],
   "replace": false
 }

@@ -1,0 +1,10 @@
+{
+  "type": "rwrk:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/frog"
+    }
+  ],
+  "item": "rwrk:frog_tongue"
+}

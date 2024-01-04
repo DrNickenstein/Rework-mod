@@ -20,5 +20,11 @@ public class RwrkGlobalLootModifiersProvider extends GlobalLootModifierProvider 
         add("warden_larynx_from_warden", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("entities/warden")).build() }, RwrkItems.WARDEN_LARYNX.get()));
 
+        add("frog_tongue_from_frog", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("entities/frog")).build() }, RwrkItems.FROG_TONGUE.get()));
+
+        add("bat_wing_from_bat", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("entities/bat")).build() }, RwrkItems.BAT_WING.get()));
+
     }
 }

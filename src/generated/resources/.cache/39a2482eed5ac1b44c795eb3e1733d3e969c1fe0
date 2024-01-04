@@ -1,3 +1,5 @@
-// 1.20.4	2024-01-04T19:47:53.837481	Global Loot Modifiers : rwrk
-49550c65318258bcce8373ddb94c39802949db1d data/forge/loot_modifiers/global_loot_modifiers.json
+// 1.20.4	2024-01-04T22:12:50.3752344	Global Loot Modifiers : rwrk
+1a95397ed3d6d712c033b1ea7d71eae53289828f data/forge/loot_modifiers/global_loot_modifiers.json
+aedf02707d578f397a012b360908340ad4ea8da7 data/rwrk/loot_modifiers/bat_wing_from_bat.json
+d6e6c4e54620575a405d4d510285c7bad0dfdb16 data/rwrk/loot_modifiers/frog_tongue_from_frog.json
 817daf7de312d7430af074453ee28b20502e8cbe data/rwrk/loot_modifiers/warden_larynx_from_warden.json

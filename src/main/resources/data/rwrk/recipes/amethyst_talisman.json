@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "@": {
+      "item": "minecraft:gold_ingot"
+    },
+    "0": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "0 0",
+    "#@#",
+    " # "
+  ],
+  "result": {
+    "item": "rwrk:amethyst_talisman"
+  }
+}

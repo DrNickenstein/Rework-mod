@@ -6,6 +6,10 @@
   "item.rwrk.sonic_boom_device": "Dispositivo di Raggio Sonico",
   "item.rwrk.amethyst_talisman": "Talismano d'Ametista",
 
+  //Tabs
+
+  "itemGroup.rework_tab": "Rework Tab",
+
   //Armatura
 
   "item.rwrk.amethyst_helmet": "Elmetto d'ametista",

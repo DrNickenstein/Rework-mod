@@ -6,6 +6,10 @@
   "item.rwrk.sonic_boom_device": "Sonic Boom Device",
   "item.rwrk.amethyst_talisman": "Amethyst Talisman",
 
+  //Tabs
+
+  "itemGroup.rework_tab": "Rework Tab",
+
   //Armour
 
   "item.rwrk.amethyst_helmet": "Amethyst Helmet",

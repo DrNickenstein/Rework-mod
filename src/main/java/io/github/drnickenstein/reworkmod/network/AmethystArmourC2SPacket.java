@@ -2,7 +2,6 @@ package io.github.drnickenstein.reworkmod.network;
 
 import io.github.drnickenstein.reworkmod.items.wearables.armour.AmethystChestplate;
 import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.Item;
@@ -27,28 +26,23 @@ public class AmethystArmourC2SPacket {
 
         context.enqueueWork(() -> {
 
-            System.out.println("packet sent");
-
             ServerPlayer player = context.getSender();
-            ServerLevel level = player.serverLevel();
 
-            ItemStack wornItemStack = player.getItemBySlot(EquipmentSlot.CHEST);
-            Item wornItem = wornItemStack.getItem();
+            if(player != null) {
+                ItemStack wornItemStack = player.getItemBySlot(EquipmentSlot.CHEST);
+                Item wornItem = wornItemStack.getItem();
 
-            if(wornItem instanceof AmethystChestplate) {
+                if (wornItem instanceof AmethystChestplate) {
 
-                AmethystChestplate wornAmethystChestplate = (AmethystChestplate)wornItem;
+                    AmethystChestplate wornAmethystChestplate = (AmethystChestplate) wornItem;
 
-                if(wornAmethystChestplate.isSetFull(wornItemStack)) {
+                    if (wornAmethystChestplate.isSetFull(wornItemStack)) {
 
-                    System.out.println("set is full");
-                    wornAmethystChestplate.activateEffects(wornItemStack);
+                        wornAmethystChestplate.activateEffects(wornItemStack);
 
+                    }
                 }
-
             }
-
         });
-
     }
 }

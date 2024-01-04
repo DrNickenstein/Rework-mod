@@ -32,13 +32,13 @@ public class AmethystTalisman extends Item {
                 return;
             }
 
+            //The pAmplifier is the level of the effect, with 0 being level one.
             if((player.getItemInHand(InteractionHand.MAIN_HAND)).getItem() == this
                     || (player.getItemInHand(InteractionHand.OFF_HAND)).getItem() == this) {
-                player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false));
+                player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, false, false));
 
             }
         }
-        System.out.println("Tick");
 
     }
 }

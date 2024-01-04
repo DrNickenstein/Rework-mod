@@ -2,14 +2,9 @@ package io.github.drnickenstein.reworkmod.handler;
 
 import io.github.drnickenstein.reworkmod.ReworkMod;
 import io.github.drnickenstein.reworkmod.init.RwrkKeybindings;
-import io.github.drnickenstein.reworkmod.items.wearables.armour.AmethystChestplate;
 import io.github.drnickenstein.reworkmod.network.AmethystArmourC2SPacket;
 import io.github.drnickenstein.reworkmod.network.RwrkPacketHandler;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.player.LocalPlayer;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

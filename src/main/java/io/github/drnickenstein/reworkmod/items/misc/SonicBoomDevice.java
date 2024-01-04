@@ -24,14 +24,19 @@ public class SonicBoomDevice extends Item {
         super(pProperties);
     }
 
+
+    //The use duration is in ticks.
     @Override
     public int getUseDuration(@NotNull ItemStack pStack) {
         return 60;
     }
 
+    //The method is called upon item right click.
     @Override
     public @NotNull InteractionResultHolder<ItemStack> use(@NotNull Level pLevel, Player pPlayer, @NotNull InteractionHand pUsedHand) {
-
+        /*The method call of startUsingItem is necessary
+        in order to actually start the use of the item,
+        or else the item can't be used.*/
         pPlayer.startUsingItem(pUsedHand);
         pPlayer.playSound(SoundEvents.WARDEN_SONIC_CHARGE, 3.0f, 1.0f);
 
@@ -55,10 +60,14 @@ public class SonicBoomDevice extends Item {
                 return super.finishUsingItem(pStack, pLevel, pLivingEntity);
             }
 
+            /*With the movement getters we are moving the bounding box
+            in which the item will take effect according to the direction
+            the player is facing (north, south, east, west, up or down).*/
             boundingBox = new AABB(pos).inflate(10.0D).move(getXMovement(player.getDirection()),
                                                                         getYMovement(player.getDirection()),
                                                                         getZMovement(player.getDirection()));
 
+            //We are not damaging the user, and the damage doesnt affect wardens.
             for(LivingEntity entity : pLevel.getEntitiesOfClass(LivingEntity.class, boundingBox)) {
                 if(!(entity == player) && !(entity instanceof Warden)) {
                     entity.hurt(pLevel.damageSources().sonicBoom(player), 40.0f);
@@ -96,6 +105,9 @@ public class SonicBoomDevice extends Item {
 
     }
 
+    /*The following methods return the movement
+    on the respective axis according to the
+    Direction given as parameter.*/
     private double getXMovement(Direction d) {
 
         return switch (d) {

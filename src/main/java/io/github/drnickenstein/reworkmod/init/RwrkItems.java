@@ -1,7 +1,7 @@
 package io.github.drnickenstein.reworkmod.init;
 
 import io.github.drnickenstein.reworkmod.ReworkMod;
-import io.github.drnickenstein.reworkmod.items.misc.AmethystTalisman;
+import io.github.drnickenstein.reworkmod.items.wearables.AmethystTalisman;
 import io.github.drnickenstein.reworkmod.items.misc.SonicBoomDevice;
 import io.github.drnickenstein.reworkmod.items.wearables.armour.AmethystChestplate;
 import io.github.drnickenstein.reworkmod.util.RwrkArmorMaterials;

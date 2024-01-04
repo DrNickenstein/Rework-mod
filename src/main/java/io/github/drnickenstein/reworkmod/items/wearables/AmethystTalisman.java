@@ -1,4 +1,4 @@
-package io.github.drnickenstein.reworkmod.items.misc;
+package io.github.drnickenstein.reworkmod.items.wearables;
 
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.entity.Entity;

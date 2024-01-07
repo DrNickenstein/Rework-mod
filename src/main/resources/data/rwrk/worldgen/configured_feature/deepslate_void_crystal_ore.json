@@ -1,13 +1,13 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "size": 6,
-    "discard_chance_on_air_exposure": 0,
+    "size": 8,
+    "discard_chance_on_air_exposure": 0.5,
     "targets": [
       {
         "target": {
-          "predicate_type": "minecraft:tag_match",
-          "tag": "minecraft:sculk_replaceable"
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:sculk"
         },
         "state": {
           "Name": "rwrk:deepslate_void_crystal_ore"

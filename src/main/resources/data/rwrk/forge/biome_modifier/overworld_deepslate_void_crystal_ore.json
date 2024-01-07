@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "features": "rwrk:overworld_deepslate_void_crystal_ore",
+  "biome": "#minecraft:is_overworld",
+  "step": "underground_ores"
+}

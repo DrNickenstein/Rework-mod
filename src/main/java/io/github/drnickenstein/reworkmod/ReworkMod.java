@@ -15,9 +15,11 @@ public class ReworkMod {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         RwrkItems.ITEMS.register(bus);
+        RwrkItems.POTIONS.register(bus);
         RwrkBlocks.BLOCKS.register(bus);
         RwrkMobEffects.MOB_EFFECTS.register(bus);
         RwrkCreativeTabs.TABS.register(bus);
+        RwrkEntities.ENTITIES.register(bus);
         RwrkLootModifiers.LOOT_MODIFIER_SERIALIZERS.register(bus);
     }
 }

@@ -7,12 +7,18 @@
   "item.rwrk.amethyst_talisman": "Talismano d'Ametista",
   "item.rwrk.frog_tongue": "Lingua di Rana",
   "item.rwrk.bat_wing": "Ala di Pipistrello",
+  "item.rwrk.bizarre_whistle": "Fischietto Bizzarro",
+  "item.rwrk.fluttery_mushroom_cap": "Cappello di Fungo Svolazzante",
 
-  //Blocks
+  //Uova di spawn
+
+  "item.rwrk.mad_fungus_sage_spawn_egg": "Uovo di Saggio dei Funghi Matto",
+
+  //Blocchi
 
   "block.rwrk.deepslate_void_crystal_ore": "Minerale di Cristallo di Void in Ardesia Profonda",
 
-  //Tabs
+  //Pagine della creativa
 
   "itemGroup.rework_tab": "Rework Tab",
 
@@ -32,7 +38,32 @@
   "tooltip.amethyst_armour.cooldown": "Ricarica potere... ",
   "tooltip.amethyst_armour.ready_for_use": "Abilità pronta all'uso",
 
-  //Effects
-  "effect.rwrk.invulnerability": "Invulnerabilità"
+  //Effetti
+
+  "effect.rwrk.invulnerability": "Invulnerabilità",
+
+  //Entità
+
+  "entity.rwrk.mad_fungus_sage": "Saggio dei Funghi Matto",
+
+  //Dialoghi
+
+  "dialog.mad_fungus_sage.bat_wing_received": "Ugh... mi sa che dovrò usarla, anche se fa davvero schifo!",
+  "dialog.mad_fungus_sage.frog_tongue_received": "Bleah... è appiccicosa!",
+  "dialog.mad_fungus_sage.glow_berries_received": "Mmm... che buona... è davvero uno spreco doverle usare...",
+  "dialog.mad_fungus_sage.emerald_received": "OOOOH! LUUUUUCCICA!!!!!!",
+  "dialog.mad_fungus_sage.nothing_received": "Non mi serve!",
+  "dialog.mad_fungus_sage.still_need": "Ho ancora bisogno di ",
+  "dialog.mad_fungus_sage.missing_emeralds": " smeraldi, ",
+  "dialog.mad_fungus_sage.missing_glow_berries": " bacche luminose, ",
+  "dialog.mad_fungus_sage.missing_bat_wings": " ala di pipistrello, ",
+  "dialog.mad_fungus_sage.missing_frog_tongues": " lingue di rana, ",
+  "dialog.mad_fungus_sage.bring_me_start": "portami gli ingredienti che mi mancano per iniziare il lavoro di cui ti parlavo.",
+
+  //Pozioni
+
+  "item.minecraft.potion.effect.miners_potion": "Pozione del Minatore",
+  "item.minecraft.splash_potion.effect.miners_potion": "Pozione del Minatore da lancio",
+  "item.minecraft.lingering_potion.effect.miners_potion": "Pozione del Minatore persistente"
 
 }

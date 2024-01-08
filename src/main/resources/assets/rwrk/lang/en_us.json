@@ -7,6 +7,12 @@
   "item.rwrk.amethyst_talisman": "Amethyst Talisman",
   "item.rwrk.frog_tongue": "Frog Tongue",
   "item.rwrk.bat_wing": "Bat Wing",
+  "item.rwrk.bizarre_whistle": "Bizarre Whistle",
+  "item.rwrk.fluttery_mushroom_cap": "Fluttery Mushroom Cap",
+
+  //Spawn eggs
+
+  "item.rwrk.mad_fungus_sage_spawn_egg": "Mad Fungus Sage Spawn Egg",
 
   //Blocks
 
@@ -33,6 +39,28 @@
   "tooltip.amethyst_armour.ready_for_use": "Ability ready for use",
 
   //Effects
-  "effect.rwrk.invulnerability": "Invulnerability"
+  "effect.rwrk.invulnerability": "Invulnerability",
 
+  //Entities
+  "entity.rwrk.mad_fungus_sage": "Mad Fungus Sage",
+
+  //Dialogs
+
+  "dialog.mad_fungus_sage.bat_wing_received": "Ugh, guess I'll have to use this too...",
+  "dialog.mad_fungus_sage.frog_tongue_received": "Ew... it's sticky!",
+  "dialog.mad_fungus_sage.glow_berries_received": "Mmm... yummy... what a waste!",
+  "dialog.mad_fungus_sage.emerald_received": "OOOOH! SHIIIIINY!!!!!!",
+  "dialog.mad_fungus_sage.nothing_received": "I do not need that!",
+  "dialog.mad_fungus_sage.still_need": "I still need ",
+  "dialog.mad_fungus_sage.missing_emeralds": " emeralds, ",
+  "dialog.mad_fungus_sage.missing_glow_berries": " glow berries, ",
+  "dialog.mad_fungus_sage.missing_bat_wings": " bat wing, ",
+  "dialog.mad_fungus_sage.missing_frog_tongues": " frog tongues, ",
+  "dialog.mad_fungus_sage.bring_me_start": "bring me the ingredients I'm missing to start the job I talked to you about.",
+
+  //Potions
+
+  "item.minecraft.potion.effect.miners_potion": "Miner's Potion",
+  "item.minecraft.splash_potion.effect.miners_potion": "Splash Miner's Potion",
+  "item.minecraft.lingering_potion.effect.miners_potion": "Lingering Miner's Potion"
 }

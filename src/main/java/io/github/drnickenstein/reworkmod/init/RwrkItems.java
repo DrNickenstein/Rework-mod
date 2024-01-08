@@ -27,6 +27,7 @@ public class RwrkItems {
 
 
     //Misc items
+
     public static final RegistryObject<Item> VOID_CRYSTAL = addToTab(ITEMS.register("void_crystal", () -> new Item(new Item.Properties()
             .rarity(Rarity.EPIC))));
     public static final RegistryObject<Item> WARDEN_LARYNX = addToTab(ITEMS.register("warden_larynx",() -> new Item(new Item.Properties()
@@ -64,7 +65,9 @@ public class RwrkItems {
 
     //Blocks
 
-    public static final RegistryObject<BlockItem> DEEPSLATE_VOID_CRYSTAL_ORE_ITEM = addToTab(ITEMS.register("deepslate_void_crystal_ore",  () -> new BlockItem(RwrkBlocks.DEEPSLATE_VOID_CRYSTAL_ORE.get(), new Item.Properties())));
+    public static final RegistryObject<BlockItem> DEEPSLATE_VOID_CRYSTAL_ORE_ITEM = addToTab(ITEMS.register("deepslate_void_crystal_ore", () -> new BlockItem(RwrkBlocks.DEEPSLATE_VOID_CRYSTAL_ORE.get(),
+                    new Item.Properties()
+            )));
 
 
     //Potions

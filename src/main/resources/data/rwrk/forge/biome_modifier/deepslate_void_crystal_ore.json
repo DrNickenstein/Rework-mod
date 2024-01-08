@@ -1,6 +1,8 @@
 {
   "type": "forge:add_features",
   "features": "rwrk:deepslate_void_crystal_ore",
-  "biome": "minecraft:deep_dark",
+  "biomes": [
+    "minecraft:deep_dark"
+  ],
   "step": "underground_ores"
 }

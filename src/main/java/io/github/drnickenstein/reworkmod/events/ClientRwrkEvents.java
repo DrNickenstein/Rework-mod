@@ -1,7 +1,9 @@
 package io.github.drnickenstein.reworkmod.events;
 
 import io.github.drnickenstein.reworkmod.ReworkMod;
+import io.github.drnickenstein.reworkmod.client.model.FlutteryMushroomModel;
 import io.github.drnickenstein.reworkmod.client.model.MadFungusSageModel;
+import io.github.drnickenstein.reworkmod.client.renderer.FlutteryMushroomRenderer;
 import io.github.drnickenstein.reworkmod.client.renderer.MadFungusSageRenderer;
 import io.github.drnickenstein.reworkmod.init.RwrkEntities;
 import net.minecraftforge.api.distmarker.Dist;
@@ -16,6 +18,7 @@ public class ClientRwrkEvents {
     public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
 
         event.registerEntityRenderer(RwrkEntities.MAD_FUNGUS_SAGE.get(), MadFungusSageRenderer::new);
+        event.registerEntityRenderer(RwrkEntities.FLUTTERY_MUSHROOM.get(), FlutteryMushroomRenderer::new);
 
     }
 
@@ -23,6 +26,7 @@ public class ClientRwrkEvents {
     public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 
         event.registerLayerDefinition(MadFungusSageModel.LAYER_LOCATION, MadFungusSageModel::createBodyLayer);
+        event.registerLayerDefinition(FlutteryMushroomModel.LAYER_LOCATION, FlutteryMushroomModel::createBodyLayer);
 
     }
 

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "features": "rwrk:fluttery_mushroom_block",
+  "biomes": "minecraft:dripstone_caves",
+  "step": "vegetal_decoration"
+}

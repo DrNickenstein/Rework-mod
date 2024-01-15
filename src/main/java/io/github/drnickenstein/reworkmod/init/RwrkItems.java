@@ -48,6 +48,8 @@ public class RwrkItems {
 
     public static final RegistryObject<ForgeSpawnEggItem> MAD_FUNGUS_SAGE_SPAWN_EGG = addToTab(ITEMS.register("mad_fungus_sage_spawn_egg",
             () -> new ForgeSpawnEggItem(RwrkEntities.MAD_FUNGUS_SAGE, 0xd1d1d1, 0x334a7a, new Item.Properties())));
+    public static final RegistryObject<ForgeSpawnEggItem> FLUTTERY_MUSHROOM_SPAWN_EGG = addToTab(ITEMS.register("fluttery_mushroom_spawn_egg",
+            () -> new ForgeSpawnEggItem(RwrkEntities.FLUTTERY_MUSHROOM, 0x334a7a, 0xeb8634, new Item.Properties())));
 
 
     //Wearables
@@ -68,6 +70,10 @@ public class RwrkItems {
     public static final RegistryObject<BlockItem> DEEPSLATE_VOID_CRYSTAL_ORE_ITEM = addToTab(ITEMS.register("deepslate_void_crystal_ore", () -> new BlockItem(RwrkBlocks.DEEPSLATE_VOID_CRYSTAL_ORE.get(),
                     new Item.Properties()
             )));
+
+    public static final RegistryObject<BlockItem> FLUTTERY_MUSHROOM_BLOCK_ITEM = addToTab(ITEMS.register("fluttery_mushroom_block", () -> new BlockItem(RwrkBlocks.FLUTTERY_MUSHROOM_BLOCK.get(),
+            new Item.Properties()
+    )));
 
 
     //Potions

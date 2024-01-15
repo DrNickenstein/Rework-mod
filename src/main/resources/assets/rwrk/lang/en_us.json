@@ -13,10 +13,12 @@
   //Spawn eggs
 
   "item.rwrk.mad_fungus_sage_spawn_egg": "Mad Fungus Sage Spawn Egg",
+  "item.rwrk.fluttery_mushroom_spawn_egg": "Fluttery Mushroom Spawn Egg",
 
   //Blocks
 
   "block.rwrk.deepslate_void_crystal_ore": "Deepslate Void Crystal Ore",
+  "block.rwrk.fluttery_mushroom_block": "Fluttery Mushroom",
 
   //Tabs
 
@@ -34,15 +36,19 @@
   "key.rwrk.armour_effect_activation": "Armour effect activation",
 
   //Tooltips
+
   "tooltip.amethyst_armour.use": "\nEvery 180s, press the armour ability activation key to become invincible for 10s.\n",
   "tooltip.amethyst_armour.cooldown": "Cooling down... ",
   "tooltip.amethyst_armour.ready_for_use": "Ability ready for use",
 
   //Effects
+
   "effect.rwrk.invulnerability": "Invulnerability",
 
   //Entities
+
   "entity.rwrk.mad_fungus_sage": "Mad Fungus Sage",
+  "entity.rwrk.fluttery_mushroom": "Fluttery Mushroom",
 
   //Dialogs
 
@@ -50,13 +56,16 @@
   "dialog.mad_fungus_sage.frog_tongue_received": "Ew... it's sticky!",
   "dialog.mad_fungus_sage.glow_berries_received": "Mmm... yummy... what a waste!",
   "dialog.mad_fungus_sage.emerald_received": "OOOOH! SHIIIIINY!!!!!!",
+  "dialog.mad_fungus_sage.fluttery_mushroom_cap_received": "Finally, the Potion is about to be complete...",
   "dialog.mad_fungus_sage.nothing_received": "I do not need that!",
   "dialog.mad_fungus_sage.still_need": "I still need ",
   "dialog.mad_fungus_sage.missing_emeralds": " emeralds, ",
   "dialog.mad_fungus_sage.missing_glow_berries": " glow berries, ",
   "dialog.mad_fungus_sage.missing_bat_wings": " bat wing, ",
   "dialog.mad_fungus_sage.missing_frog_tongues": " frog tongues, ",
-  "dialog.mad_fungus_sage.bring_me_start": "bring me the ingredients I'm missing to start the job I talked to you about.",
+  "dialog.mad_fungus_sage.missing_fluttery_mushroom_caps": " mushroom caps, ",
+  "dialog.mad_fungus_sage.bring_me_stage_0": "bring me the ingredients I'm missing to start the job I told you about.",
+  "dialog.mad_fungus_sage.bring_me_stage_2": "hurry up, bring me the caps and I'll finally finish the Potion!",
 
   //Potions
 

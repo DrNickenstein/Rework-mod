@@ -2,8 +2,10 @@ package io.github.drnickenstein.reworkmod.init;
 
 
 import io.github.drnickenstein.reworkmod.ReworkMod;
+import io.github.drnickenstein.reworkmod.blocks.FlutteryMushroomBlock;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -26,4 +28,7 @@ public class RwrkBlocks {
                     .sound(SoundType.DEEPSLATE)
             )
     );
+
+    public static final RegistryObject<Block> FLUTTERY_MUSHROOM_BLOCK = BLOCKS.register("fluttery_mushroom_block",
+            () -> new FlutteryMushroomBlock(Blocks.MUSHROOM_STEM.properties().lightLevel((lightLevel) -> 8)));
 }
